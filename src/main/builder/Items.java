@@ -1,0 +1,8 @@
+//Перечисление всех предметов
+package main.builder;
+
+public enum Items {
+    SIMPLE_HAMMER, HARD_HAMMER, SIMPLE_SWORD, HARD_SWORD, SIMPLE_BOW, HARD_BOW,
+    SIMPLE_BREASTPLATE, HARD_BREASTPLATE, SIMPLE_HELMET, HARD_HELMET
+
+}
