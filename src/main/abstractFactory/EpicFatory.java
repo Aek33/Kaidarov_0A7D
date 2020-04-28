@@ -44,7 +44,7 @@ public class EpicFatory implements RandomFactrory {
 
         switch (randomNumber){
             case 0:
-                armory = new EpicArmoryBuilder().createArmor(Items.HARD_HAMMER);
+                armory = new EpicArmoryBuilder().createArmor(Items.HARD_BREASTPLATE);
                 break;
             case 1:
                 armory = new EpicArmoryBuilder().createArmor(Items.HARD_HELMET);

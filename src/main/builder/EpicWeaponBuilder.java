@@ -12,7 +12,7 @@ public class EpicWeaponBuilder implements WeaponBuilder {
         switch (ItemName){
             case HARD_HAMMER:
                 weapon = new Weapon.WeaponBuilder()
-                        .withWeaponName("Молот")
+                        .withWeaponName("Стальной Молот")
                         .withWeaponType("Двуручное")
                         .withCrushingDamage(200)
                         .withAttackSpeed(0.5)
@@ -21,7 +21,7 @@ public class EpicWeaponBuilder implements WeaponBuilder {
 
             case HARD_BOW:
                 weapon = new Weapon.WeaponBuilder()
-                        .withWeaponName("Лук")
+                        .withWeaponName("Крепкий Лук")
                         .withWeaponType("Стрелковое")
                         .withPrickingDamage(100)
                         .withAttackSpeed(0.5)
@@ -30,7 +30,7 @@ public class EpicWeaponBuilder implements WeaponBuilder {
 
             case HARD_SWORD:
                 weapon = new Weapon.WeaponBuilder()
-                        .withWeaponName("Меч")
+                        .withWeaponName("Стальной Меч")
                         .withWeaponType("Одноручное")
                         .withCuttingDamage(125)
                         .withPrickingDamage(50)

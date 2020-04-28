@@ -43,7 +43,7 @@ public class SimpleFactory implements RandomFactrory {
 
         switch (randomNumber){
             case 0:
-                armory = new SimpleArmoryBuilder().createArmor(Items.SIMPLE_HAMMER);
+                armory = new SimpleArmoryBuilder().createArmor(Items.SIMPLE_BREASTPLATE);
                 break;
             case 1:
                 armory = new SimpleArmoryBuilder().createArmor(Items.SIMPLE_HELMET);
