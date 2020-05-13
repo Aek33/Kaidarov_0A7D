@@ -1,28 +1,33 @@
 package main;
 
-import main.abstractFactory.EpicFatory;
-import main.abstractFactory.RandomFactrory;
-import main.abstractFactory.SimpleFactory;
-import main.builder.Weapon;
-import main.decorator.EnchantmentDecorator;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.Scanner;
+
 
 public class Main {
 
     public static void main(String[] args){
-        RandomFactrory factory;
 
-        factory = new EpicFatory();
+        System.out.println("Введите число");
 
-        for (int i = 0; i < 20; i++){
-            System.out.println(factory.createRandomArmor().getArmoryName());
-            System.out.println(factory.createRandomWeapon().getWeaponName());
+        Scanner scan = new Scanner(System.in);
+
+        String UserInputString = scan.nextLine();
+
+        System.out.println(Sum(0, UserInputString));
+
+    }
+
+    static int Sum(int i, @NotNull String s) {
+        int result = Integer.parseInt(String.valueOf(s.charAt(i)));
+
+        if (i == s.length() - 1){
+            System.out.println("Сумма элементов равна:");
+            return result;
         }
-
-        Weapon RWeapon = factory.createRandomWeapon();
-
-        EnchantmentDecorator EWeapon = new EnchantmentDecorator(RWeapon);
-        System.out.println(EWeapon.getWeaponName());
-
-
+        else{
+            return result + Sum( i + 1,  s);
+        }
     }
 }
